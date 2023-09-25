@@ -1,0 +1,19 @@
+<div class="contenerVista">
+  <div class="row row-cols-1 row-cols-md-7 g-7 mt-3" id="carta">
+    <div class="col" *ngFor="let comic of comics">
+      <mat-card-header>
+        <mat-card-title>{{comic.title}}</mat-card-title>
+        <mat-card-title>{{comic.name}}</mat-card-title>
+      </mat-card-header>
+      <br>
+      <img mat-card-image src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}"
+        class="card-img-top img-fluid" style="height: 300px">
+        <mat-card-subtitle class="mat-card-subtitle">{{comic.description}}</mat-card-subtitle>
+        <br>
+        <br>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" class="custom-button" (click)="cerrarVentana()">Regresar</button>
+      </mat-card-actions>
+    </div>
+  </div>
+</div>

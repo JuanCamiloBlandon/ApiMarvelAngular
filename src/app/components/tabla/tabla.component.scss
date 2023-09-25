@@ -1,0 +1,114 @@
+/* Estilo para el contenedor principal */
+#contenedorprincipal {
+  color: #ddd;
+  background-image: url('../../../assets/29583-marvel.jpg');
+  /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta correcta a tu imagen */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-attachment: fixed;
+  /* Evita que la imagen se repita */
+  background-attachment: fixed;
+  /* Fija la imagen para que no se desplace con el desplazamiento de la página */
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 5px solid #f3f4f6;
+  /* Borde azul característico de Marvel */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* Borde redondeado */
+}
+
+.strong{
+  -webkit-text-stroke: 2px black; /* Borde de 2px de color negro */
+}
+
+
+/* Estilos para encabezados */
+h1,
+h2 {
+  font-size: 40px;
+  color: #fff;
+  /* Texto en color blanco */
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  /* Fuente estilo cómic */
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Añade margen superior e inferior para separar los encabezados */
+}
+
+/* Estilo para la tabla */
+.table-container {
+  overflow-y: auto;
+  max-height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.mat-elevation-z8 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  /* Fondo blanco */
+}
+
+/* Estilos para las celdas */
+.mat-cell,
+.mat-header-cell {
+  padding: 10px;
+  text-align: left;
+  font-weight: normal;
+  border: 1px solid #ddd;
+  color: #000;
+  /* Texto en color negro */
+  font-size: 16px;
+  /* Tamaño de fuente */
+}
+
+/* Estilos para las filas alternas */
+.mat-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para las filas al pasar el mouse */
+.mat-row:hover {
+  background-color: #e0e0e0;
+}
+
+/* Estilos para las columnas específicas */
+.mat-cell.mat-column-id,
+.mat-header-cell.mat-column-id {
+  min-width: 50px;
+  font-weight: bold;
+  /* Texto en negrita para la columna ID */
+}
+
+.mat-cell.mat-column-description,
+.mat-header-cell.mat-column-description {
+  white-space: normal;
+  font-style: italic;
+  /* Estilo de fuente cursiva para la columna de descripción */
+}
+
+.mat-cell.mat-column-nombre,
+.mat-header-cell.mat-column-nombre,
+.mat-cell.mat-column-title,
+.mat-header-cell.mat-column-title {
+  width: 150px;
+  font-weight: bold;
+  /* Texto en negrita para las columnas "Nombre" y "Title" */
+}
+
+/* Estilos específicos para la cabecera de la tabla */
+.mat-header-row {
+  background-color: #f3f4f6;
+  /* Fondo azul claro para la cabecera */
+  font-weight: bold;
+  /* Texto en negrita en la cabecera */
+}

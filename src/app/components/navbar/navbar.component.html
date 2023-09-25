@@ -1,0 +1,20 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" class="menubutton">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="selectOption('events')" class="custom-button">
+      Events
+    </button>
+    <button mat-menu-item (click)="selectOption('characters')" class="custom-button">
+      Characters
+    </button>
+    <button mat-menu-item (click)="selectOption('comics')" class="custom-button">
+      Comics
+    </button>
+    <button mat-menu-item (click)="selectOption('series')" class="custom-button">
+      Series
+    </button>
+    <button mat-menu-item (click)="redirectToTabla()" class="custom-button">
+      Ver tabla
+    </button>
+  </mat-menu>

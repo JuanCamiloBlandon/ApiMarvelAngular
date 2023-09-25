@@ -1,0 +1,129 @@
+
+
+/* Estilo para el contenedor principal */
+#contenedorprincipal {
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 5px solid #f3f4f6;
+  /* Borde azul característico de Marvel */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* Borde redondeado */
+}
+
+
+/* Estilos para encabezados */
+h1,
+h2 {
+  font-size: 40px;
+  color: #fff;
+  /* Texto en color blanco */
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  /* Fuente estilo cómic */
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+  /* Añade margen superior e inferior para separar los encabezados */
+}
+
+/* Estilo para las tarjetas */
+.mat-card-subtitle{
+  color: #ddd;
+}
+
+.strong{
+  -webkit-text-stroke: 2px black; /* Borde de 2px de color negro */
+}
+
+
+.col {
+  color: #ddd;
+  background-image: url('../../../assets/12755.jpg');
+  /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta correcta a tu imagen */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-attachment: fixed;
+  /* Fija la imagen para que no se desplace con el desplazamiento de la página */
+  border: 1px solid #ddd;
+  /* Borde ligero */
+  border-radius: 5px;
+  /* Borde redondeado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  transition: transform 0.2s ease;
+  /* Transición de escala */
+  padding: 16px;
+}
+
+.col:hover {
+  transform: scale(1.05);
+  /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilo para la imagen dentro de cada carta */
+img.card-img-top {
+  padding: 10px;
+  width: 100%;
+  /* Hacer que cada imagen ocupe el ancho completo de su contenedor */
+  height: auto;
+  /* Mantener la proporción de la imagen */
+  object-fit: cover;
+  /* Ajustar la imagen para llenar el espacio sin deformación */
+}
+
+/* Estilo para el contenedor del botón */
+.custom-button-container {
+  text-align: center;
+  /* Centra el botón horizontalmente */
+  margin-top: 16px;
+  /* Agrega un espacio superior al botón */
+  margin-bottom: 16px;
+  /* Agrega un espacio inferior al botón */
+}
+
+/* Estilo para el botón personalizado */
+.custom-button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  color: azure;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.custom-button:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 12px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

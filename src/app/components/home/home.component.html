@@ -1,0 +1,43 @@
+<div id="contedor1">
+    <div class="container" id="contenedorprincipal">
+      <app-navbar></app-navbar>
+      <h1 class="mt-3 text-center animate__animated animate__bounce slower" style="
+        color: rgb(246, 243, 243);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      ">
+        <strong class="strong">Universe Marvel</strong>
+      </h1>
+      <h2 class="mt-3 text-center animate__animated animate__bounce slower" style="
+        color: rgb(246, 243, 243);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      ">
+        <strong class="strong">Avengers</strong>
+      </h2>
+      <h2 class="mt-3 text-center animate__animated animate__bounce slower" style="
+        color: rgb(246, 243, 243);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+      ">
+        <strong class="strong">{{textDinamic}}</strong>
+      </h2>
+      <mat-card-actions id="botonvercomic"> 
+      </mat-card-actions>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-3" id="carta">
+        <div class="col" *ngFor="let comic of comics">
+          <mat-card-header>
+            <mat-card-title>{{comic.name}}</mat-card-title>
+            <mat-card-title>{{comic.title}}</mat-card-title>
+          </mat-card-header>
+          <br>
+          <mat-card-subtitle class="mat-card-subtitle">{{"ID: "+comic.id}}</mat-card-subtitle>
+          <img mat-card-image src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}"
+            class="card-img-top img-fluid" style="height: 300px"> 
+          <mat-card-actions id="botonvercomic">
+            <button mat-raised-button color="warn" class="custom-button" (click)="abrirVentana(comic.id)">Ver detalles</button>
+          </mat-card-actions>
+        </div>
+      </div>
+    </div>
+  </div>
